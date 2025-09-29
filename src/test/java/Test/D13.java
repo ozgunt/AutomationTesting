@@ -1,12 +1,12 @@
 package Test;
 
+import Utilities.ReusableMethods;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import Utilities.Driver;
-import Utilities.ReusableMethods;
 
 public class D13 {
 

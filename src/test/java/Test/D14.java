@@ -1,18 +1,10 @@
 package Test;
 
 import Utilities.Driver;
-import Utilities.TestBase_All;
-import net.bytebuddy.build.Plugin;
-import org.apache.commons.lang3.ObjectUtils;
-import org.jspecify.annotations.NullUnmarked;
 import org.testng.annotations.Test;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import pages.TestOtomasyonuPage;
-
-
-
-import java.util.PriorityQueue;
 
 public class D14 {
 
