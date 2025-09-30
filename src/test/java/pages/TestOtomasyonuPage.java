@@ -23,7 +23,9 @@ public class TestOtomasyonuPage {
 
 
 
-    @FindBy(id="global-search") //xpath ="//input[@class='search-input']"
+
+
+    @FindBy(id = "global-search") //xpath ="//input[@class='search-input']"
     public WebElement aramaKutusu;
 
     @FindBy(xpath = "//*[@*='prod-img']")
