@@ -1,5 +1,7 @@
 package Utilities;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +16,7 @@ public class TestBase_Each {
     public void  setup (){
         this.driver =new ChromeDriver();
         this.driver.manage().window().maximize();
-        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10L));
+        this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
 

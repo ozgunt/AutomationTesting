@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import javax.swing.plaf.PanelUI;
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class DependsOnMethods {
 
@@ -21,7 +22,7 @@ public class DependsOnMethods {
     public  void setup(){
         driver =new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
     }
 

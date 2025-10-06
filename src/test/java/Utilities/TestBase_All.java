@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.security.PublicKey;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 public class TestBase_All {
     protected static WebDriver driver;
@@ -14,7 +15,7 @@ public class TestBase_All {
     protected static void setup(){
         driver=new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
     }
